@@ -1,5 +1,6 @@
 ﻿using ff14bot.AClasses;
 using System;
+using System.Reflection;
 
 namespace SamplePluginBuild
 {
@@ -11,6 +12,6 @@ namespace SamplePluginBuild
 
         public override string Description => "Sample Plugin Description";
 
-        public override Version Version { get; } = new Version(1, 0, 0, 0);
+        public override Version Version { get; } = Assembly.GetExecutingAssembly().GetName().Version;
     }
 }

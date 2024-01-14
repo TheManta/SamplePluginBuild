@@ -6,7 +6,9 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="RebornBuddy.Assemblies" Version="1.0.599" />
+    <PackageReference Include="RebornBuddy.Assemblies" Version="1.0.599">
+      <ExcludeAssets>runtime</ExcludeAssets>
+    </PackageReference>
   </ItemGroup>
 
 </Project>
