@@ -5,6 +5,13 @@ VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SamplePluginBuild", "SamplePluginBuild\SamplePluginBuild.csproj", "{375F7085-B274-42AB-B6BA-8CE4BE88F81E}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".github", ".github", "{08E1E217-BE60-4BCD-845D-322F9B8FE9E2}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "workflows", "workflows", "{4912A6ED-9683-4E21-9F46-507A7CA33C36}"
+	ProjectSection(SolutionItems) = preProject
+		.github\workflows\Build.yml = .github\workflows\Build.yml
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -18,5 +25,11 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{4912A6ED-9683-4E21-9F46-507A7CA33C36} = {08E1E217-BE60-4BCD-845D-322F9B8FE9E2}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A27ADD10-D683-4942-947F-6BEC37DF13AE}
 	EndGlobalSection
 EndGlobal
